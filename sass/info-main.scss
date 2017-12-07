@@ -1,0 +1,222 @@
+.info-main {
+    @include gradient;
+    margin-top: 20px;
+}
+
+.info-main__wrapper {
+  @include container;
+  padding-top: 82px;
+  padding-bottom: 320px;
+
+  background: url("../img/iphone/iphone-mobile.png") no-repeat 50% 108%;
+
+  @media (min-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    padding-bottom: 43px;
+    padding-top: 112px;
+
+    background: url("../img/iphone/iphone-tablet.png") no-repeat 40px 100%;
+  }
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    padding-bottom: 30px;
+    padding-top: 83px;
+
+    background: none;
+  }
+}
+/*TUMB*/
+.info-main__thumb {
+  margin-top: 33px;
+
+  text-align: center;
+/*img-tumb*/
+  .info-main__img {
+    display: none;
+
+    @media (min-width: 1200px) {
+      position: relative;
+
+      display: block;
+      min-height: 304px;
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+
+        content: "";
+        height: 8px;
+
+        background: url("../img/iphone/layer-desktop.png") no-repeat;
+      }
+    }
+  }
+
+  .img-grey {
+      @media (min-width: 1200px) {
+    display: block;
+
+    background: url("../img/iphone/iphone-desktop1.png") no-repeat 50% -1%;
+    }
+  }
+  .img-pink {
+      @media (min-width: 1200px) {
+    display: block;
+
+    background: url("../img/iphone/iphone-desktop2.png") no-repeat 50% -1%;
+    }
+  }
+  .img-smille {
+      @media (min-width: 1200px) {
+    display: block;
+
+    background: url("../img/iphone/iphone-desktop3.png") no-repeat 50% -1%;
+    }
+  }
+  /*-----*/
+
+  .info-main__title {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: bold;
+
+    @media (min-width: 1200px)  {
+      padding-top: 52px;
+
+      font-size: 30px;
+    }
+  }
+
+  .info-main__description  {
+    margin: 0;
+    padding-top: 10px;
+
+    font-size: 14px;
+    line-height: 1.8em;
+
+    @media (min-width: 700px)  {
+      padding-top: 17px;
+    }
+
+    @media (min-width: 1200px)  {
+      padding-top: 24px;
+
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 700px) {
+    width: 50%;
+
+    text-align: left;
+  }
+
+  @media (min-width: 1200px) {
+    width: 300px;
+    margin-top: 0;
+    margin-right: 20px;
+    padding-bottom: 30px;
+
+    text-align: center;
+  }
+}
+
+.info-main__thumb:first-of-type {
+  margin-top: 0;
+}
+
+.info-main__thumb:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+/*TIME*/
+
+.info-time {
+  display: none;
+  @include container;
+  min-height: 277px;
+  margin-top: 58px;
+  padding-top: 36px;
+  padding-bottom: 16px;
+
+  text-align: right;
+
+  background: url("../img/icon/timer.png") no-repeat 40px 0%;
+
+  .info-time__description {
+    display: inline-block;
+
+    margin: 0;
+    width: 50%;
+
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+
+    span {
+      display: inline-block;
+      margin-bottom: 16px;
+
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 36px;
+
+      @media (min-width: 1200px) {
+        margin-bottom: 24px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      width: 60%;
+
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  .info-time__link {
+    display: inline-block;
+    width: 50%;
+    margin-top: 18px;
+
+    font-size: 14px;
+    line-height: 24px;
+    color: #d22856;
+    text-align: left;
+
+    @media (min-width: 1200px) {
+      width: 60%;
+      margin-top: 37px;
+
+      font-size: 18px;
+      line-height: 30px;
+
+    }
+  }
+
+  @media (min-width: 700px ) {
+    display: block;
+
+    min-height: 335px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 92px;
+    padding-bottom: 80px;
+
+    background: url("../img/icon/timer-desktop.png") no-repeat 0% 0%;
+  }
+}

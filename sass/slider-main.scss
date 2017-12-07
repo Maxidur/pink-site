@@ -1,0 +1,92 @@
+.slider-main {
+  @include container;
+
+  position: relative;
+
+  height: 350px;
+  padding-top: 45px;
+  padding-bottom: 70px;
+
+  .slider-icon  {
+    display: none;
+  }
+
+  @media(min-width: 700px) {
+    height: 310px;
+
+  }
+
+  @media(min-width: 1200px) {
+    height: 340px;
+    margin-top: 72px;
+    padding-top: 102px;
+
+    .slider-icon {
+      position: absolute;
+      top: 0;
+      left:0;
+      right: 0;
+
+      display: block;
+      width: 79px;
+      height: 63px;
+      margin: auto;
+
+      background: url('../img/icon/quotes.png') no-repeat center;
+    }
+  }
+}
+
+.item {
+  .slider__wrapper {
+    @media(min-width: 700px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  p {
+    margin: 0;
+
+    font-size: 14px;
+    color: #283645;
+    line-height: 30px;
+    text-align: center;
+
+    @media(min-width: 700px) {
+      font-size: 18px;
+    }
+  }
+
+  b {
+    display: block;
+    margin-bottom: 18px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+
+    @media(min-width: 700px) {
+      margin-top: 32px;
+      margin-bottom: 5px;
+
+      font-size: 20px;
+    }
+
+
+  }
+
+  small {
+    display: none;
+
+    @media(min-width: 700px) {
+      display: block;
+
+
+      line-height: 30px;
+      text-align: center;
+    }
+
+  }
+}

@@ -1,0 +1,14 @@
+.page-header  {
+  min-height: 460px;
+  background: url("../img/fon/iphone-mobile.png") no-repeat 50% 46%, url("../img/fon/fon-mobile.jpg") repeat-x;
+
+  @media (min-width: 700px)  {
+      min-height: 729px;
+      background: url("../img/fon/iphone-tablet.png") no-repeat 50% 100%, url("../img/fon/fon-tablet.jpg") repeat-x;
+  }
+
+  @media (min-width: 1200px)  {
+      min-height: 853px;
+      background: url("../img/fon/iphone-desktop.png") no-repeat 50% 104%, url("../img/fon/fon-desktop.jpg") repeat-x;
+  }
+}
